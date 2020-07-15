@@ -1,0 +1,12 @@
+{
+  "name": "ckeditorApp",
+  "displayName": "ckeditorApp",
+  "expo": {
+    "name": "ckeditorApp",
+    "slug": "ckeditorApp",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
