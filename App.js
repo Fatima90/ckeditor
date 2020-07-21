@@ -45,7 +45,6 @@ export default function App() {
       : ''
   ) + 'Web.bundle/loader.html';
 
-  
   return (
     <WebView
       ref={c => this.webview = c}
