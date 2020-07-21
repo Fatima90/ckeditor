@@ -10,11 +10,12 @@
           .ck-editor__editable {
               height: 300px;
               max-height: 300px;
+              color: black;
           }
         </style> -->
         <style type="text/css">
           .ck-editor {
-              color: black;
+              height: 200px;
           }
         </style>
         <!-- <link rel="stylesheet" href="./css/styles.css" type="text/css"> -->
@@ -29,6 +30,7 @@
         console.log('data',data.data);
         editor.setData(data.data);
       });
+      editor.setData(" <p>This is <strong>test</strong> data that we dot</p><p><i>from</i> before <strong>and</strong> just</p><p><placeholder>{Anchor}</placeholder></p><p>just saying.&nbsp;</p>");
     </script>
     </body>
     </html>
