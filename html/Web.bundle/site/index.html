@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <title>CKEditor</title>
+        <!-- <script src="https://cdn.ckeditor.com/ckeditor5/20.0.0/classic/ckeditor.js"></script> -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <style>
+          .ck-editor__editable {
+              height: 300px;
+              max-height: 300px;
+          }
+        </style>
+    </head>
+    <body>
+    <textarea name="editor1" id="editor1"></textarea>
+    <script src="./js/bundle.js"></script>
+    <script>
+      document.addEventListener("message", function(data) {
+        console.log('data',data.data);
+        editor.setData(data.data);
+      });
+    </script>
+    </body>
+    </html>

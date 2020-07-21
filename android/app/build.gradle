@@ -187,6 +187,11 @@ android {
 
         }
     }
+
+    sourceSets { 
+        main { assets.srcDirs = ['src/main/assets', '../../html'] } 
+    }
+    // sourceSets { main { assets.srcDirs = ['src/main/assets', '../../html'] } }
 }
 
 dependencies {
@@ -222,3 +227,8 @@ task copyDownloadableDepsToLibs(type: Copy) {
 }
 
 apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)
+
+// project.afterEvaluate {
+//     apply from: '../../copyHtml.gradle';
+//     copyEditorHtmlToAppAssets(file('../../'))
+// }
